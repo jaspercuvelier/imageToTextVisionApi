@@ -55,7 +55,7 @@
         function getResults(){
             var json = JSON.parse($("#json").val())
                 console.log(json)
-            var text = json.fullTextAnnotation.text.split('-\n').join('<span class="red">-</span>')    
+            var text = json.fullTextAnnotation.text.split('-\n').join('')    
             $("#result").html(text)    
         }
     
